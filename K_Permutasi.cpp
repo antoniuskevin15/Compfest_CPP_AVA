@@ -1,4 +1,5 @@
 #include <iostream>
+// #include <bits/stdc++.h>
 
 using namespace std;
 void display(int arr[], int n, int diff)
@@ -35,7 +36,6 @@ void permute(int arr[], int n, int diff)
 
     do
     {
-
         display(arr, n, diff);
 
     } while (next_permutation(arr, arr + n));
