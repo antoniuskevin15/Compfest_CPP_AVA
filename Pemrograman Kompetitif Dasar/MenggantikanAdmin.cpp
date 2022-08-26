@@ -19,28 +19,16 @@ int main(int argc, char const *argv[])
         {
             if (adminList.find(name) == adminList.end())
             {
-                adminList.insert(pair<string, int>(name, 0));
+                adminList.insert(pair<string, int>(name, 1));
             }
             else
             {
-                adminList[name]++;
+                ++adminList[name];
             }
         }
         else if (ord == "TANYA")
         {
-            if (adminList.find(name) != adminList.end() && adminList[name] <= 1)
-            {
-                cout << ++adminList[name] << endl;
-            }
-            else if (adminList[name] > 1)
-            {
-                cout << adminList[name] << endl;
-            }
-            else
-            {
-                adminList.insert(pair<string, int>(name, 0));
-                cout << adminList[name] << endl;
-            }
+            cout << adminList[name] << endl;
         }
     }
 

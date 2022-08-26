@@ -1,2 +1,2 @@
 
-    cout << arr[k + 1] << endl;
+        cin >> x;
