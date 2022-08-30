@@ -12,8 +12,6 @@ int main(int argc, char const *argv[])
     int C[n];
     int resA[n];
     int resB[n];
-    int scoreA = 0;
-    int scoreB = 0;
     for (int i = 0; i < m; i++)
     {
         cin >> A[i] >> B[i];
@@ -24,17 +22,17 @@ int main(int argc, char const *argv[])
         resA[i] = A[0] * L[i] + B[0] * C[i];
         resB[i] = A[1] * L[i] + B[1] * C[i];
     }
-    int minA = resA[0];
-    int minB = resB[0];
+    int maxA = resA[0];
+    int maxB = resB[0];
     for (int i = 1; i < n; i++)
     {
-        if (resA[i] >= minA)
+        if (resA[i] >= maxA)
         {
-            minA = resA[i];
+            maxA = resA[i];
         }
-        if (resB[i] >= minb)
+        if (resB[i] >= maxB)
         {
-            minA = resA[i];
+            maxB = resB[i];
         }
     }
 
