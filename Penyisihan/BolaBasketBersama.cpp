@@ -19,19 +19,19 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    ll n, d;
-    vector< pair<ll, int> > p;
-    ll power, res = 0, idx = 0;
-    ll count = 0;
+    int n, d;
+    vector< pair<int, int> > p;
+    int power, res = 0, idx = 0;
+    int count = 0;
     bool stat = false;
     cin >> n >> d;
-    for (ll i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         cin >> power;
         p.push_back(make_pair(power,0));
     }
     sort(p.begin(), p.end());
-    ll max = p[n-1].first;
+    int max = p[n-1].first;
     if(max * n < d){
         count = 0;
     }else{
