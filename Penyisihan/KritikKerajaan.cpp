@@ -17,15 +17,16 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    ll n;
-    ll l,r,k,w;
+    int n;
+    ll l,r;
+    int k,w;
     vector<ll>v;
     cin>>n;
     ll a[n];
     for(ll j = 0; j<n; j++){
         cin>>a[j];
     }
-    ll q;
+    int q;
     int qr;
     cin>>q;
     for(ll i = 0; i<q; i++){
